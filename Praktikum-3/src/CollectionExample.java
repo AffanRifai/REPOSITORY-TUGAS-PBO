@@ -3,20 +3,14 @@ import java.util.HashMap;
 
 public class CollectionExample {
     public static void main(String[] args) {
-        // Array
-        String[] fruits = {"Apple", "Banana", "Orange"};
-        System.out.println("Array:");
-        for (String fruit : fruits) {
-            System.out.println(fruit);
-        }
 
         // ArrayList
         ArrayList<String> names = new ArrayList<>();
         names.add("Affan");
         names.add("Rifai");
-        names.add("Budi");
+        names.add("Asep");
 
-        System.out.println("\nArrayList:");
+        System.out.println("\nDaftar nama:");
         for (String name : names) {
             System.out.println(name);
         }
@@ -25,11 +19,13 @@ public class CollectionExample {
         HashMap<String, Integer> scores = new HashMap<>();
         scores.put("Affan", 90);
         scores.put("Rifai", 85);
-        scores.put("Budi", 78);
+        scores.put("Asep", 78);
 
-        System.out.println("\nHashMap:");
+        // System.out.println("\nNilai Asep: " + scores.get(names.get(2)));
+        System.out.println("\nnlai (hashmap):");
         for (String key : scores.keySet()) {
-            System.out.println(key + " : " + scores.get(key));
+            System.out.println(key + ": " + scores.get(key));
         }
+
     }
 }

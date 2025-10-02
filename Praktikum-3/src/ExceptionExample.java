@@ -7,7 +7,7 @@ public class ExceptionExample {
         BufferedReader br = new BufferedReader(file);
 
         String line;
-        System.out.println("Isi file:");
+        System.out.println("\nIsi file:");
         while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
